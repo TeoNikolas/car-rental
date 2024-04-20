@@ -132,37 +132,30 @@ header{
   display: grid;
   align-items:center;
   grid-template-columns: repeat(2, 1fr);
-  right: -5px;
+  right: 0px;
 }
 .text h1{
   font-size: 3.5rem;
   letter-spacing: 2px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
-
+  margin-top: -70px;
 }
 h1{
   top: 0;
   margin: 0;
 }
 .text h2{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.text h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .text span{
   color: var(--main-color);
 }
 .text p{
   margin: 00.5rem 0 1rem;
-}
-.app-stories{
-  display: flex;
-}
-.app-stories img{
-  top: 0;
-  margin: 0;
-  width: 100px;
-  margin-right: 1rem;
-  cursor: pointer;
 }
 .form-container form{
   display: flex;
@@ -171,7 +164,7 @@ h1{
   gap: 1rem;
   position: absolute;
   bottom: 4rem;
-  left: 100px;
+  left: 300px;
   background: white;
   padding: 20px;
   border-radius: 0.5rem;
@@ -206,5 +199,7 @@ h1{
 .form-container form .btn:hover{
   background: var(--main-color);
 }
+
+
   
 
