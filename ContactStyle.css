@@ -96,7 +96,7 @@ header{
 
 .navdiv button {
   /* Add some style to the buttons */
-  background-color: #fdbb08;
+  background-color: #474fa0;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -111,7 +111,7 @@ header{
 
 .navdiv button:hover {
   /* Add some hover effect to the buttons */
-  background-color: #b75713;
+  background-color: var(--main-color);
 }
 #menu-icon{
   position: relative;
