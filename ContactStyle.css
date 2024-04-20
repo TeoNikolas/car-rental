@@ -9,64 +9,76 @@
 }
 
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #6B696A;
+.logo img {
+    width: 50px;
+    position: relative; /* relative to the parent element */
+    float: left; /* align to the left */
+    right: -50px; /* move 10 pixels to the right */
 }
-header nav{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80px;
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6b6969;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-header nav .logo{
-    width: 150px;
+.navdiv {
+  /* Add a background color and some padding to the navbar */
+  padding: 10px;
 }
-header nav .menu{
-    display: flex;
-    align-items: center;
+
+.navdiv ul {
+  /* Remove the bullets and the default margin and padding from the list */
+  position: relative;
+  float: right;
+  right: -500px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family:monospace;
+  font-size: 15px;
 }
-nav .menu a{
-    color: #fff;
-    margin-left: 30px;
-    position: relative;
-    padding-left: 30px;
+
+.navdiv li {
+  /* Make the list items appear inline */
+  display: inline;
+  /* Add some margin to the right of each item */
+  margin-right: 20px;
 }
-.sign{
-    background-color: #FDBA07;
-    padding-right: 22px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 2px;
-    
+
+.navdiv a {
+  /* Add some color and style to the links */
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-nav .menu a::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color:#cce7d0;
-    transition: 0.4s;
+
+.navdiv button {
+  /* Add some style to the buttons */
+  background-color: #474fa0;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  cursor: pointer;
+  border-radius: 5%;
+  font-family: monospace;
+  font-size: 13px;
 }
-nav .menu a:hover::after{
-    width: 100%;
-}
-nav .social a i{
-    color: #fff;
-    font-size: 22px;
-    margin-left: 10px;
-    transition: 0.3s;
-}
-nav .social a i:hover{
-    transform: scale(1.3);
-    color: #dd0707;
+
+.navdiv button:hover {
+  /* Add some hover effect to the buttons */
+  background-color: #fe5b3d;
 }
 
 #feature{
