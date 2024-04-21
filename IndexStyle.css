@@ -147,6 +147,8 @@ h1{
 }
 .text h2{
   font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+
 }
 .text h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -199,7 +201,3 @@ h1{
 .form-container form .btn:hover{
   background: var(--main-color);
 }
-
-
-  
-
